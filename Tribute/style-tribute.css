@@ -1,0 +1,117 @@
+ h1, h2 {
+    text-align: center;
+}
+body {
+    padding: 0 75px;
+    margin-right: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.photo-gallery{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+img {
+    transition: all 1s;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+
+.photo1 .obama-photo .obama-content{
+    width: 100%;
+    
+}
+
+.obama-content {
+    display: none;
+    position: relative;
+    max-width: 250px;
+    box-shadow: 0px 8px 6px 0px rgba(0, 0, 0, 0.1);
+}
+
+.photo1:hover .obama-content {
+    display: block;
+}
+
+/* Michelle Content */
+
+.michelle-content {
+    display: none;
+    position: relative;
+    max-width: 260px;
+    box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
+}
+
+.photo2 .michelle-photo .michelle-content{
+    width: 100%;
+}
+
+.photo2:hover .michelle-content {
+    display: block;
+}
+
+/* Silver Content */
+
+.silver-content {
+    display: none;
+    position: relative;
+    min-width: 160px;
+    max-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+
+
+
+.photo3:hover .silver-content {
+    display: block;
+}
+
+/* Patches Content */
+
+.patches-content {
+    display: none;
+    position: relative;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    max-width: 253px;
+}
+
+.photo4:hover .patches-content {
+    display: block;
+}
+
+/* Footer*/
+
+.quote {
+    text-align: center;
+    font-size: 1.5em;
+    color: #999;
+    padding: 150px 0;
+
+}
+
+footer {
+    padding: 50px 0;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 510px) {
+    .photo-gallery {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+}
